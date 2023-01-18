@@ -1,0 +1,30 @@
+<app-header></app-header><br><br><br><br><div>
+
+    <div class="container ankit">
+        
+
+<div class="card">
+            <div class="text-center">
+                <h2>Signup Seller</h2><br><br>
+            </div>
+            <hr>
+            <form [formGroup]="frmg" (ngSubmit)="Adddata()">
+                <dt>Name</dt>
+                <input type="text" name="name" class="form-control" formControlName="name">
+                <dt>Address</dt>
+                <input type="text" name="address" class="form-control" formControlName="address">
+                <dt>MobNumber</dt>
+                <input type="text" name="moobile" class="form-control" formControlName="mobile">
+                <dt>Email</dt>
+                <input type="text" name="email" class="form-control" formControlName="email">
+                <dt>Password</dt>
+                <input type="text" name=password class="form-control" formControlName="password">
+
+                <button style="text-align:center; margin-left: 210px; margin-top: 20px;">submit</button>
+                <a routerLink="/login">Login?</a>
+
+            </form>
+        </div>
+    </div>
+
+</div>
